@@ -22,7 +22,7 @@ export default function Home() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 flex items-center justify-center">
-        <div className="text-white text-xl">🚀 Loading Enhanced HPMREI Dashboard...</div>
+        <div className="text-white text-xl">✨ Loading Enhanced HPMREI Dashboard v2.0...</div>
       </div>
     )
   }
@@ -30,8 +30,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HPMREI Trading Dashboard</title>
-        <meta name="description" content="Secure HPMREI cryptocurrency trading dashboard" />
+        <title>🎨 Enhanced HPMREI Trading Dashboard v2.0</title>
+        <meta name="description" content="Enhanced HPMREI cryptocurrency trading dashboard with beautiful gradients" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

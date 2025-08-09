@@ -14,6 +14,7 @@ interface MarketData {
 }
 
 export default function Dashboard() {
+  // 🚀 CACHE BUST v2.0.1 - Force Vercel refresh
   const [marketData, setMarketData] = useState<MarketData>({})
   const [lastUpdate, setLastUpdate] = useState<string>('')
   const [status, setStatus] = useState('Loading...')
