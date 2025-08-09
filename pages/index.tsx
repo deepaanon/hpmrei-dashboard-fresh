@@ -30,13 +30,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>🎨 Enhanced HPMREI Trading Dashboard v2.0</title>
-        <meta name="description" content="Enhanced HPMREI cryptocurrency trading dashboard with beautiful gradients" />
+        <title>🎨 Enhanced HPMREI Trading Dashboard v2.0 - NUCLEAR CACHE BUST</title>
+        <meta name="description" content="Enhanced HPMREI cryptocurrency trading dashboard with beautiful gradients - FORCED REFRESH" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="cache-control" content="no-cache, no-store, must-revalidate" />
+        <meta name="pragma" content="no-cache" />
+        <meta name="expires" content="0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="min-h-screen bg-trading-bg">
+      <div style={{
+        minHeight: '100vh',
+        background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4c1d95 100%)',
+        position: 'relative'
+      }}>
         {isAuthenticated ? (
           <Dashboard />
         ) : (

@@ -185,13 +185,34 @@ export default function Dashboard() {
   const currentData = sortedData.slice(startIndex, startIndex + itemsPerPage)
 
   return (
-    <div className="min-h-screen gradient-bg text-white p-4">
+    <div style={{
+      minHeight: '100vh',
+      background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4c1d95 100%)',
+      color: 'white',
+      padding: '1rem'
+    }}>
       {/* Header */}
-      <div className="text-center mb-8 p-6 glass-panel rounded-xl border border-purple-500/30">
-        <h1 className="text-5xl font-bold mb-3 gradient-header">
-          🚀 HPMREI Trading Dashboard
+      <div style={{
+        textAlign: 'center',
+        marginBottom: '2rem',
+        padding: '1.5rem',
+        background: 'rgba(255, 255, 255, 0.1)',
+        backdropFilter: 'blur(10px)',
+        borderRadius: '0.75rem',
+        border: '1px solid rgba(147, 51, 234, 0.3)'
+      }}>
+        <h1 style={{
+          fontSize: '3rem',
+          fontWeight: 'bold',
+          marginBottom: '0.75rem',
+          background: 'linear-gradient(90deg, #fbbf24 0%, #f59e0b 50%, #ea580c 100%)',
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          WebkitTextFillColor: 'transparent'
+        }}>
+          ✨ ENHANCED HPMREI Trading Dashboard v2.0
         </h1>
-        <p className="text-gray-300 text-lg">Advanced Cryptocurrency Mean Reversion Analysis</p>
+        <p style={{ color: '#d1d5db', fontSize: '1.125rem' }}>Advanced Cryptocurrency Mean Reversion Analysis</p>
       </div>
 
       {/* Status Bar */}
