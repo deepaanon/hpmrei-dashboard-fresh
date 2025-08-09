@@ -184,24 +184,24 @@ export default function Dashboard() {
   const currentData = sortedData.slice(startIndex, startIndex + itemsPerPage)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 text-white p-4">
+    <div className="min-h-screen gradient-bg text-white p-4">
       {/* Header */}
-      <div className="text-center mb-8 p-6 bg-gradient-to-r from-purple-600/20 to-blue-600/20 rounded-xl border border-purple-500/30 backdrop-blur-lg">
-        <h1 className="text-5xl font-bold mb-3 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+      <div className="text-center mb-8 p-6 glass-panel rounded-xl border border-purple-500/30">
+        <h1 className="text-5xl font-bold mb-3 gradient-header">
           🚀 HPMREI Trading Dashboard
         </h1>
         <p className="text-gray-300 text-lg">Advanced Cryptocurrency Mean Reversion Analysis</p>
       </div>
 
       {/* Status Bar */}
-      <div className="bg-black/30 backdrop-blur-md p-4 rounded-xl border border-gray-600/50 mb-6">
+      <div className="glass-panel p-4 rounded-xl mb-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <span className="text-xl font-semibold">{status}</span>
             <span className="text-gray-400">Last Update: {lastUpdate}</span>
           </div>
           <div className="flex items-center space-x-2">
-            <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+            <div className="w-3 h-3 bg-green-500 rounded-full pulse-animation"></div>
             <span className="text-green-400">Live Data</span>
           </div>
         </div>
@@ -213,26 +213,26 @@ export default function Dashboard() {
         <div className="flex flex-wrap gap-3 mb-4">
           <button
             onClick={() => setShowAddSymbol(true)}
-            className="px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 rounded-lg font-medium transition-all duration-200 shadow-lg"
+            className="px-4 py-2 gradient-button-green hover:opacity-90 rounded-lg font-medium transition-all duration-200 shadow-lg text-white"
           >
             ➕ Add Symbol
           </button>
           <button
             onClick={() => setShowUpload(true)}
-            className="px-4 py-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 rounded-lg font-medium transition-all duration-200 shadow-lg"
+            className="px-4 py-2 gradient-button-blue hover:opacity-90 rounded-lg font-medium transition-all duration-200 shadow-lg text-white"
           >
             📁 Upload List
           </button>
           <button
             onClick={exportSymbols}
-            className="px-4 py-2 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 rounded-lg font-medium transition-all duration-200 shadow-lg"
+            className="px-4 py-2 gradient-button-purple hover:opacity-90 rounded-lg font-medium transition-all duration-200 shadow-lg text-white"
           >
             💾 Export
           </button>
           {selectedSymbols.size > 0 && (
             <button
               onClick={removeSelectedSymbols}
-              className="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 rounded-lg font-medium transition-all duration-200 shadow-lg"
+              className="px-4 py-2 gradient-button-red hover:opacity-90 rounded-lg font-medium transition-all duration-200 shadow-lg text-white"
             >
               🗑️ Remove Selected ({selectedSymbols.size})
             </button>
