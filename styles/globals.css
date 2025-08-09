@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .signal-strong-buy {
+    @apply bg-trading-green text-black;
+  }
+  
+  .signal-buy {
+    @apply bg-trading-light-green text-black;
+  }
+  
+  .signal-neutral {
+    @apply bg-trading-yellow text-black;
+  }
+  
+  .signal-sell {
+    @apply bg-trading-orange text-black;
+  }
+  
+  .signal-strong-sell {
+    @apply bg-trading-red text-white;
+  }
+}
